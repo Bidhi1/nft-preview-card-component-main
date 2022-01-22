@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --main-BG:hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+
+body{
+     font-size: 18px;
+     font-family: "Outfit" ,sans-serif ; 
+      color: white;
+      background-color:var(--main-BG);
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+}
+
+.container{
+    border-radius: 20px;
+    padding: 1.5rem;
+    background-color: var(--card-BG);
+    width: 375px;
+    box-shadow:black;
+    box-shadow: 10px;
+}
+.img{
+    position: relative;
+    
+}
+.image{
+    width: 100%;
+    border-radius: 15px 15px;
+}
+.overlay{
+    width:100%;
+    position: absolute;
+    height:calc(100% - 4px);
+    top:0;
+    background-color:  hsl(178, 100%, 50%, 60%);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.eye{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+.overlay:hover{
+    opacity:1;
+    cursor: pointer;
+    border-radius: 15px 15px;
+}
+
+.header{
+    text-align:left;
+    margin-top:1.5rem;
+
+}
+
+.header h2{
+    font-weight: 600;
+}
+
+.description{
+    padding:1.3rem 0;
+    color: var(--Soft-blue);
+    font-weight: 400;
+}
+
+.value{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 1.5rem;
+}
+
+.eticon{
+    color: var(--Cyan);
+    letter-spacing: 1px;
+    padding-left: 0.2rem;
+    margin-bottom:0.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.et{
+    margin:0 2;
+    cursor: pointer;
+    margin-right: 0.3rem;
+}
+.time{
+        display: flex;
+        color: var(--Soft-blue);
+        align-items: center;
+        justify-content: space-between;
+        
+}
+
+.time div{
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.clock{
+    padding-right: 0.2rem;
+    margin-top: 0.3rem;
+}
+
+.days{
+    padding: 5px;
+}
+.attribution{
+    display: flex;
+    align-items: center;
+    color: var(--Soft-blue);
+}
+
+.attribution div a{
+    color: var(--White);
+    text-decoration: none;
+}
+
+.avatar{
+    width:3rem;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+    margin-right:1.5rem;
+}
+
+.header h2:hover , .attribution div a:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+
+
